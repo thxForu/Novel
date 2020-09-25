@@ -1,0 +1,16 @@
+next
+narrator "It's for the best.{c}Fighting back her repulsion, Raelin wiggled her fingers across the monkey's right cheek.{a} Then its forehead... {a}Then it's left cheek.{c}As long as she was doing it, she may as well leave no room for error.{c}She drew her hand back and quickly left the monkey's presence, returning to Gwynne who bore a curious expression."
+enter(Gwynne) setPosition(Gwynne,1) move(Gwynne,0.7) move(Raelin,0.1) next
+setface(Gwynne,normF) setBody(Gwynne,casualF) next
+Gwynne "Is that it?"
+Raelin "I think so."
+Gwynne "I didn't see anything happen."
+
+move(Raelin,0)
+Raelin "Yeah I know. But I tickled its face.{a} And that better have been the right monkey because it felt disgusting."
+
+setBody(Gwynne,specialF) next
+Gwynne "I hope so too."
+exit(Raelin) exit(Gwynne) playMusic(null) next
+narrator "As they left, they failed to see the monkey disappear into thin air. {a}Its purpose had been served..."
+showScene(false,spotlight)

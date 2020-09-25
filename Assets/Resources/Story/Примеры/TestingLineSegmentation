@@ -1,0 +1,3 @@
+narrator "I...{c} I can see something...{a}...{wa 1}......{w 3}What is it?{a}It's some kind of light..."
+"I'm stunned for a moment. {c}The light is so pure.{wa 0.3} So beautiful..."show(Raelin)
+Raelin "Hello?{a} Is anyone there?"

@@ -1,0 +1,84 @@
+Commands for Visual Novel.
+Every click event is a separate line in the file. The events below show how to call actions to make the chapter work.
+Each line may have multiple actions. Actions on the same line should be delimited by a space. Because of this, no value,
+including filenames, should contain spaces.
+
+#DIALOGUE COMMANDS
+#Make a character speak
+  characterName "dialogue"                                                      ex: Raelin "Hi, how are you?"
+  + symbol makes dialogue additive to continue from last segment.               ex: Raelin +"That's good to hear."
+  No name before dialogue means use last speaker.                               ex: +"That's good to hear."
+
+  #USING DIALOGUE COMMAND TAGS
+  commands inside of dialogue can be used to trigger and segment the dialogue into different parts. So instead of having multiple lines for one character,
+  everything can be put on one line.
+  {c} wait for input and clear
+  {a} wait for input and append
+  {w n} wait for n seconds and clear
+  {wa n} wait for n seconds and append                                          ex: INSTEAD OF USING
+                                                                                Raelin "Hi!"
+                                                                                "How are you?"
+                                                                                +" Good!"
+
+                                                                                USE THIS
+
+                                                                                Raelin "Hi!{w}How are you?{a} Good!"
+
+  #USING CHOICES AS EVENTS
+  Every choice should be on its own line. A choice is not a regular event so it is not paired with dialogue.
+  a choice begins with the word 'choice' to signify it is a choice and not a normal line.
+  after choice have the choice title in quotes.
+  then inside of squiggly brackets we have our choices in quotes followed by a single command to be executed if that choice is made.
+                                                                                ex: choice "How are you doing?"
+                                                                                    {
+                                                                                      "Fine"
+                                                                                        Raelin "That is good to hear."
+                                                                                      "Terrible"
+                                                                                        Raelin "Oh? Why is that?"
+                                                                                    }
+
+  #USING EVENTS INSIDE OF dialogue
+  events are contained inside of brackets []. They control things that happen while dialogue is being displayed.
+  Actions can be called withing brackets as they would normally be called at the end of a line. Separate actions by a space character.
+                                                                                ex: "Hello [showScene(true,blur)]everyone!"
+  then there are events that control different things aside from regular actions.
+  [txtSpd speed,charactersPerFrame] - change text architect speed               ex: "Let's move [txtSpd 15,2]slowly."
+  [/txtSpd] - return architet to normal speed.                                  ex: "Move [txtSpd 30,1]slow [/txtSpd]but then return to normal speed."
+
+#REGULAR ACTION COMMANDS##################################################################################################################################
+#Move character on screen
+
+#Make Character fade in and out of scene.
+#use ; for multiple characters...
+  enter(characterName)                                                          ex: enter(Raelin)
+  exit(characterName)                                                           ex: exit(Raelin)
+
+#Change Layer Image
+  setBackground(imageName)                                                      ex: setBackground(forest)
+  setCinematic(imageName)                                                       ex: setCinematic(forest)
+  setForeground(imageName)                                                      ex: setForeground(forest)
+
+  *optional parameters (order of parameters does not matter)
+    1. speed of transition                                                      ex: set__________(forest,1.0)
+    2. transition smoothing                                                     ex: set__________(forest,1.0,false)
+
+#Special Transitions For Layers and Overlay
+use special transitions instead of normal fading to fade out entire scene or just change images on a layer like the background or foreground.
+  transBackground(imagename,transitionEffect)                                   ex: transBackground(forest,hurricane)
+  transCinematic(imagename,transitionEffect)                                    ex: transCinematic(forest,hurricane)
+  transForeground(imagename,transitionEffect)                                   ex: transForeground(forest,hurricane)
+
+  *optional parameters (order does not matter)
+    1. speedOfTransition                                                        ex: trans__________(forest,hurricane,5)
+    2. smoothing                                                                ex: trans__________(forest,hurricane,true)
+
+#Show or Hide the entire scene with a special transition to or from black.
+  showScene(true/false,transitionEffect)                                        ex: showScene(false,blackHole)
+
+#Play Sounds and Music
+  playSound(soundName)                                                          ex: playSound(siren)
+  playMusic(songName)                                                           ex: playMusic(suspense)
+
+#Effect
+  effect(characterName,value)                                                   ex:effect(Raelin,2) \ effect(Raelin,-2)
+  getEffect(character)                                                          ex:getEffect(Raelin)

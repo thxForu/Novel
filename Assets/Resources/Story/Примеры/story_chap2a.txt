@@ -1,0 +1,56 @@
+next
+exit(Raelin) exit(Gwynne) exit(Maeko) showScene(true,spotlight) transBackground(forest,feathers) faceRight(Raelin) next
+narrator "Led by the kitsune girl, Raelin and Gwynne soon came to a clearing in the woods. {a}Meditating on a lone tree stump was a brown monkey that looked more like a chunk of dark meat that had been chewed up and spat back out again.{c}The very sight of it alone was nearly enough to cause Raelin's gorge to rise.{c}If this wasn't the monkey whose face needed tickling, then she may as well resort to blowing up the planet herself.{c}The kitsune bid them farewell and pranced off out of sight, leaving them alone with the alarmingly repulsive creature."
+enter(Raelin) enter(Gwynne) setPosition(Raelin,0) setPosition(Gwynne,0.6) next
+Raelin "That's gotta be it."
+Gwynne "Poor thing.{a} Why does it look that way?"
+Raelin "It's not the only one. Remember the name of this forest. Apparently it must be in their genes or something."
+
+setFace(Gwynne,normA) setBody(Gwynne,specialA) faceLeft(Gwynne) move(Gwynne,0.7) next
+Gwynne "Well, I guess now's as good a time as ever. You need to tickle its face, Raelin."
+
+setFace(Raelin,seriousA) move(Raelin,0.05) next
+Raelin "...{a} Why do you think I brought you along?"
+
+setFace(Gwynne,scoldA) move(Gwynne,0.65) next
+Gwynne "Oh?{a} Come on, you don't actually expect me to touch that thing, do you?"
+Raelin "The world's gonna explode, Gwynne. Someone's gotta do it."
+Gwynne "So then you do it."
+
+setFace(Raelin,shockedA) move(Raelin,0) next
+Raelin "What if it bites my fingers off?"
+
+move(Gwynne,0.6) setBody(Gwynne,casualA) next
+Gwynne "And it's alright if it bites mine off?!"
+
+setFace(Raelin,puzzledA) next
+Raelin "No, that's not right. And don't get the idea that that's the reason I want you to do it. I just happened to think about that now..."
+Gwynne "Well, one of us has to do it."
+Raelin "I agree."
+
+setFace(Gwynne,smileF) setBody(Gwynne,specialF) move(Gwynne,0.65) next
+Gwynne "Oh!{a} I know!{c}Let's settle the decision with an unbiased game of rock, paper, scissors!"
+
+move(Raelin,0.1) next
+Raelin "Really? That's the deciding factor? A game?"
+
+setFace(Gwynne,normF) next
+Gwynne "Or we could squabble for the next half hour and wind up resorting to it anyways?"
+Raelin "Fine. Let's do it..."
+
+narrator "To Raelin's dismay, as they cast shapes with their hands, Gwynne came away with a [setFace(Gwynne,smileF)]wry grin on her face and playfully fisted down Raelin's two fingers."
+Raelin "Urg..."
+Gwynne "Look, all you have to do is tickle it and everything will be fine."
+Raelin "Fine then..."
+
+exit(Gwynne) move(Gwynne,1.5) move(Raelin,0.5) next
+narrator "But as Raelin approached the chimp, it's meditation broke.{a} It stared up at her with souless, black eyes.{a} Staring as if daring her to lay a finger on it."
+"She spoke softly, drawing her hand closer and closer to its face so as to not startle it. At this point, the monkey began to drool, eliminating and least 30% of available space where she would even be willing to touch it."
+"She froze, inches from its face.{a} The saliva pooled at its feet.{c} She began to second guess it. Perhaps this was just a cruel joke Gareth was playing on her. Or maybe it really was the only way."
+choice "Tickle the monkey's face?"
+{
+  "I'm already here, may as well do it."
+    Load(story_chap3a)
+  "No. I'm not touching this thing."
+    Load(story_chap3b)
+}

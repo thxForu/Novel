@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\xavav\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\xavav\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Novel.283492332.00" t="ExcludeRecursive" />
+    <e p="D:\Unity\Projects\FullProject03\Novel" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="DevXUnityObfuscatorFree" t="Include">
+          <e p="815C5C2E-021D-4C11-8060-9A5D816279B9.txt" t="Include" />
+          <e p="DevXUnity.cs" t="Include" />
+          <e p="DevXUnityLocalizeGameObject.cs" t="Include" />
+          <e p="readme-ru.txt" t="Include" />
+          <e p="readme.txt" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="gameFiles" t="Include">
+            <e p="0.txt" t="Include" />
+            <e p="1.txt" t="Include" />
+          </e>
+          <e p="Images" t="Include">
+            <e p="TransitionEffects" t="Include">
+              <e p="TransitionEffect.shader" t="Include" />
+            </e>
+          </e>
+          <e p="Story" t="Include">
+            <e p="Commands.txt" t="Include" />
+            <e p="story_1timeline1a.txt" t="Include" />
+            <e p="story_1timeline1b.txt" t="Include" />
+            <e p="story_1timleline2a.txt" t="Include" />
+            <e p="story_1timleline2b.txt" t="Include" />
+            <e p="story_chap0a.txt" t="Include" />
+            <e p="Примеры" t="Include">
+              <e p="story_chap2a.txt" t="Include" />
+              <e p="story_chap3a.txt" t="Include" />
+              <e p="story_chap3b.txt" t="Include" />
+              <e p="TestingLineSegmentation.txt" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="savData" t="Include">
+          <e p="file.txt" t="Include" />
+          <e p="gameFiles" t="Include">
+            <e p="1" t="Include">
+              <e p="1.txt" t="Include" />
+              <e p="2.txt" t="Include" />
+              <e p="3.txt" t="Include" />
+              <e p="4.txt" t="Include" />
+              <e p="5.txt" t="Include" />
+              <e p="6.txt" t="Include" />
+            </e>
+            <e p="2" t="Include">
+              <e p="1.txt" t="Include" />
+              <e p="3.txt" t="Include" />
+            </e>
+            <e p="3" t="Include">
+              <e p="1.txt" t="Include" />
+              <e p="3.txt" t="Include" />
+            </e>
+            <e p="ERR! File Assets" t="Include">
+              <e p="userData" t="Include">
+                <e p="file.txt does not exist!.txt" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Core" t="Include">
+            <e p="AudioManager.cs" t="Include" />
+            <e p="BCFC.cs" t="Include" />
+            <e p="Character.cs" t="Include" />
+            <e p="CharacterManager.cs" t="Include" />
+            <e p="DialogueSystem.cs" t="Include" />
+            <e p="FileManager.cs" t="Include" />
+            <e p="GlobalF.cs" t="Include" />
+            <e p="InputAndChoiceSystem" t="Include">
+              <e p="ChoiceButton.cs" t="Include" />
+              <e p="ChoiceScreen.cs" t="Include" />
+              <e p="InputScreen.cs" t="Include" />
+              <e p="TitleHeader.cs" t="Include" />
+            </e>
+            <e p="Novel Controller" t="Include">
+              <e p="CLM.cs" t="Include" />
+              <e p="DialogueEvents.cs" t="Include" />
+              <e p="NovelController.cs" t="Include" />
+            </e>
+            <e p="SavingLoading" t="Include">
+              <e p="GAMEFILE.cs" t="Include" />
+              <e p="GameSavePanel.cs" t="Include" />
+            </e>
+            <e p="TagManager.cs" t="Include" />
+            <e p="TextArchitect.cs" t="Include" />
+            <e p="TransitionMaster.cs" t="Include" />
+          </e>
+          <e p="Features" t="Include">
+            <e p="AdaptiveFont.cs" t="Include" />
+            <e p="AdaptiveFontTMPro.cs" t="Include" />
+            <e p="AdaptiveText.cs" t="Include" />
+          </e>
+          <e p="MainMenu.cs" t="Include" />
+        </e>
+        <e p="TESTING[DELETE BEFORE BUILD]" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="architectTesting.cs" t="Include" />
+            <e p="AudioTesting.cs" t="Include" />
+            <e p="ChoiceScreenTesting.cs" t="Include" />
+            <e p="dialogueTesting.cs" t="Include" />
+            <e p="InputScrenTesting.cs" t="Include" />
+            <e p="TransitionMasterTesting.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Examples &amp; Extras" t="Include">
+            <e p="Fonts" t="Include">
+              <e p="Anton OFL.txt" t="Include" />
+              <e p="Bangers - OFL.txt" t="Include" />
+              <e p="LiberationSans - OFL.txt" t="Include" />
+              <e p="Oswald-Bold - OFL.txt" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Benchmark01.cs" t="Include" />
+              <e p="Benchmark01_UGUI.cs" t="Include" />
+              <e p="Benchmark02.cs" t="Include" />
+              <e p="Benchmark03.cs" t="Include" />
+              <e p="Benchmark04.cs" t="Include" />
+              <e p="CameraController.cs" t="Include" />
+              <e p="ChatController.cs" t="Include" />
+              <e p="EnvMapAnimator.cs" t="Include" />
+              <e p="ObjectSpin.cs" t="Include" />
+              <e p="ShaderPropAnimator.cs" t="Include" />
+              <e p="SimpleScript.cs" t="Include" />
+              <e p="SkewTextExample.cs" t="Include" />
+              <e p="TeleType.cs" t="Include" />
+              <e p="TextConsoleSimulator.cs" t="Include" />
+              <e p="TextMeshProFloatingText.cs" t="Include" />
+              <e p="TextMeshSpawner.cs" t="Include" />
+              <e p="TMP_DigitValidator.cs" t="Include" />
+              <e p="TMP_ExampleScript_01.cs" t="Include" />
+              <e p="TMP_FrameRateCounter.cs" t="Include" />
+              <e p="TMP_PhoneNumberValidator.cs" t="Include" />
+              <e p="TMP_TextEventCheck.cs" t="Include" />
+              <e p="TMP_TextEventHandler.cs" t="Include" />
+              <e p="TMP_TextInfoDebugTool.cs" t="Include" />
+              <e p="TMP_TextSelector_A.cs" t="Include" />
+              <e p="TMP_TextSelector_B.cs" t="Include" />
+              <e p="TMP_UiFrameRateCounter.cs" t="Include" />
+              <e p="TMPro_InstructionOverlay.cs" t="Include" />
+              <e p="VertexColorCycler.cs" t="Include" />
+              <e p="VertexJitter.cs" t="Include" />
+              <e p="VertexShakeA.cs" t="Include" />
+              <e p="VertexShakeB.cs" t="Include" />
+              <e p="VertexZoom.cs" t="Include" />
+              <e p="WarpTextExample.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Novel.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

@@ -1,0 +1,23 @@
+next 
+narrator "Something in Raelin's stomache turned.{c}Clearly this was some kind of dumb joke. It didn't even make any sense!{c}How could tickling an animal's face prevent the world from exploding?{c}And for that matter, why was the world going to explode at all?{a} Gareth never really was clear on that portion.{c}  He had just said, <i>'some forces of the universe are purely mystical in nature.'</i>"
+"She drew her hand back. {a}There was no way she was actually going through with this just so she could have a joking old wizard throw a finger at her and rear back in one-sided humor."
+Raelin "This is ridiculous."
+narrator "Raelin turned around, feeling slightly hot in her forehead that she had even considered following through with such an asinine request.{c}No matter. She was leaving.{c}Gwynne, upon seeing her, cocked her head and turned over her hands in a gesture of <i>'What happened?'</i>"
+
+enter(Gwynne) setPosition(Gwynne,1) move(Gwynne,0.7) move(Raelin,0.1) next
+setFace(Gwynne,normF) setBody(Gwynne,casualF) next
+Gwynne "Second thoughts?"
+
+setFace(Raelin,seriousA) setBody(Raelin,specialAngle) faceLeft(Raelin) move(Raelin,0) next
+Raelin "This is stupid. I'm not doing it."
+
+move(Gwynne,0.75) next
+Gwynne "What do you mean?"
+Raelin "I mean this is obviously another one of Gareth's impractical jokes, and I, for once in my life, am not going to be caught in the middle of it."
+
+setFace(Gwynne,scoldA) setBody(Gwynne,casualA) move(Gwynne,0.65) setFace(Raelin,puzzledA) next
+Gwynne "You couldn't have decided that before we trekked all the way out here?{c}Seriously, Raelin. My feet hurt."
+Raelin "Yeah, sorry about that."
+exit(Raelin) exit(Gwynne) playMusic(null) next
+narrator "Without another word, they departed in route back home.{c}Doing so, they failed to see the monkey's face contort into a wicked grin.{c}It's shoulders rose and fell in the rhythm of silent laughter, blackened teeth like razors showing through its curled, prune-like lips.{c}If only she had taken Gareth seriously..."
+showScene(false,spotlight)
