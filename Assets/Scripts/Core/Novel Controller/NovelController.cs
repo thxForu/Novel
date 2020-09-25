@@ -42,7 +42,7 @@ public class NovelController : MonoBehaviour
 
 		if (!System.IO.File.Exists(filePath))
 		{
-			activeGameFile = new GAMEFILE();//don't save because we want a new one to start whenever we hit new game. any save is manual.
+			activeGameFile = new GAMEFILE();
 		}
 		else
 		{
@@ -530,9 +530,6 @@ public class NovelController : MonoBehaviour
 		if (!int.TryParse(parts[0], out val))
 			val = 1;
 		val = Mathf.Clamp(val, 1, 9);
-
-		//чекнути файли орігінала і доробити
-		//CACHE.tempVals[val - 1] = parts[1].Replace("~", " ");//since spaces are not allowed in values, a squiggly line represents a space in these values.
 	}
 	void Command_SavePlayerName(string newName)
 	{
@@ -682,7 +679,6 @@ public class NovelController : MonoBehaviour
 		Texture2D transTex = Resources.Load("Images/TransitionEffects/" + texName) as Texture2D;
 		float spd = 2f;
 		bool smooth = false;
-		Debug.Log("SCEEN BLACK");
 		for (int i = 2; i < parameters.Length; i++)
 		{
 			string p = parameters[i];
@@ -701,8 +697,6 @@ public class NovelController : MonoBehaviour
 		string[] parameters = data.Split(',');
 		Character c = CharacterManager.instance.GetCharacter(parameters[0]);
 		string trigger = parameters[1];
-
-
 	}
 	void Command_CamShake()
 	{
